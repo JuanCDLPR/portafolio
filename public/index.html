@@ -15,6 +15,8 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,7 +26,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Juan De La Paz</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +42,97 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <style>
+    @font-face {
+      font-family: "Def";
+      src: url("%PUBLIC_URL%/fonts/TypoSlab Irregular Demo.otf");
+    }
+
+    @font-face {
+      font-family: "OxygenBold";
+      src: url("%PUBLIC_URL%/fonts/Oxygen-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "OxygenMedium";
+      src: url("%PUBLIC_URL%/fonts/Oxygen-Bold.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "OxygenLight";
+      src: url("%PUBLIC_URL%/fonts/Oxygen-Light.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "PlayfairDisplay";
+      src: url("%PUBLIC_URL%/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+    }
+
+    @font-face {
+      font-family: "PlayfairDisplayItalic";
+      src: url("%PUBLIC_URL%/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+    }
+
+    body {
+      font-family: "Def" !important;
+    }
+    .font-Oxygen {
+      font-family: "Def" !important;
+    }
+
+    .font-OxygenBold {
+      font-family: "OxygenBold" !important;
+    }
+
+    .font-OxygenMedium {
+      font-family: "OxygenMedium" !important;
+    }
+
+    .font-OxygenLight {
+      font-family: "OxygenLight" !important;
+    }
+
+    .font-PlayfairDisplay {
+      font-family: "PlayfairDisplay" !important;
+    }
+
+    .font-PlayfairDisplayItalic {
+      font-family: "PlayfairDisplayItalic" !important;
+    }
+
+    .animated-text {
+      position: relative;
+      /* para que el subrayado se posicione correctamente */
+      display: inline-block;
+      /* para que ocupe solo el ancho necesario */
+      padding-bottom: 5px;
+      /* para dejar espacio para el subrayado */
+    }
+
+    .animated-text::after {
+      content: "";
+      /* para que el subrayado sea un pseudo-elemento */
+      position: absolute;
+      /* para posicionar el subrayado debajo del texto */
+      width: 100%;
+      /* para que el subrayado ocupe todo el ancho */
+      height: 2px;
+      /* para definir la altura del subrayado */
+      bottom: 0;
+      /* para posicionar el subrayado en la parte inferior del texto */
+      left: 0;
+      /* para que el subrayado inicie desde la izquierda */
+      background-color: #c9a396;
+      /* para definir el color del subrayado */
+      transform: scaleX(0);
+      /* para que el subrayado esté oculto al inicio */
+      transition: transform 0.2s ease-out;
+      /* para definir la transición al animar */
+    }
+
+    .animated-text:hover::after {
+      transform: scaleX(1);
+      /* para que el subrayado se muestre al pasar el cursor */
+    }
+  </style>
 </html>
