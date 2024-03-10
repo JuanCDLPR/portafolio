@@ -45,7 +45,7 @@ export default function Initial() {
           <Navbar.Collapse className="bg-white" id="basic-navbar-nav">
             <Nav className="ms-auto me-auto">
               <Link
-                className="p-2 me-2 font-Oxygen animated-text"
+                className="p-2 me-2 font-Oxygen animated-text "
                 to="home"
                 style={{
                   textDecoration: "none",
