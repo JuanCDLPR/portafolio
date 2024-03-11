@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import NavBar from "./NavBar";
 import { Box, Tooltip, IconButton } from "@mui/material";
 import Container from "react-bootstrap/Container";
@@ -15,9 +15,17 @@ import {
 import loogo from "./assets/j-alphabet-round-icon.svg";
 import Error404 from "./includes/Error404";
 import Inicio from "./modules/inicio/Inicio";
+import SobreMi from "./modules/sobre_mi/SobreMi";
 
 function App() {
   const location = useLocation();
+  const [expanded, setExpanded] = useState(false);
+
+  const onClose = () => {
+    setTimeout(() => {
+      setExpanded(false);
+    }, 400);
+  };
 
   return (
     <>
@@ -29,6 +37,7 @@ function App() {
           backgroundColor: "white",
           height: "5rem",
         }}
+        expanded={expanded}
       >
         <Container>
           <Navbar.Brand href="#">
@@ -43,7 +52,10 @@ function App() {
             </Link>
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={() => setExpanded(expanded ? false : "expanded")}
+          />
           <Navbar.Collapse className="bg-white" id="basic-navbar-nav">
             <Nav className="ms-auto me-auto">
               <Link
@@ -56,17 +68,19 @@ function App() {
                       ? "#C9A396"
                       : "black",
                 }}
+                onClick={onClose}
               >
                 INICIO
               </Link>
 
               <Link
                 className="p-2 me-2 font-Oxygen animated-text"
-                to="nosotros"
+                to="sobre-mi"
                 style={{
                   textDecoration: "none",
                   color: location.pathname == "/nosotros" ? "#C9A396" : "black",
                 }}
+                onClick={onClose}
               >
                 SOBRE MI
               </Link>
@@ -78,6 +92,7 @@ function App() {
                   color:
                     location.pathname == "/productos" ? "#C9A396" : "black",
                 }}
+                onClick={onClose}
               >
                 PROYECTOS
               </Link>
@@ -89,8 +104,9 @@ function App() {
                   textDecoration: "none",
                   color: location.pathname == "/bride" ? "#C9A396" : "black",
                 }}
+                onClick={onClose}
               >
-                ESTUDIOS
+                EXPERIENCIA & ESTUDIOS
               </Link>
 
               <Link
@@ -100,6 +116,7 @@ function App() {
                   textDecoration: "none",
                   color: location.pathname == "/contacto" ? "#C9A396" : "black",
                 }}
+                onClick={onClose}
               >
                 CONTACTO
               </Link>
@@ -123,8 +140,9 @@ function App() {
           }}
         >
           <Routes>
-            <Route path="/home" element={<Inicio />} />
             <Route path="/" element={<Inicio />} />
+            <Route path="/home" element={<Inicio />} />
+            <Route path="/sobre-mi" element={<SobreMi />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Box>

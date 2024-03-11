@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import { Col, Row } from "react-bootstrap";
+
+import { FaGithub } from "react-icons/fa";
 
 import Me from "../../assets/me.png";
 import CV from "../../assets/JuanCarlos_DeLaPazRamírez_CV_ES.pdf";
@@ -23,25 +25,45 @@ export default function Inicio() {
     enlaceTemp.click();
     document.body.removeChild(enlaceTemp);
   };
+
   return (
     <>
       <div className="pt-5rem container">
         <Row className="px-0 px-md-2">
           <Col xs={12} md={6} className="d-flex justify-content-center">
-            <div
-              style={{
-                background: `url(${Me})`,
-                backgroundPositionX: "85%",
-                backgroundPositionY: "10%",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "150%",
-                border: "3px solid #000000",
-                borderRadius: "5rem",
-                width: "20rem",
-                height: "20rem",
-              }}
-              className="d-block d-md-none"
-            />
+            <div className="d-flex d-md-none flex-column align-items-center">
+              <div
+                style={{
+                  background: `url(${Me})`,
+                  backgroundPositionX: "85%",
+                  backgroundPositionY: "10%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "150%",
+                  border: "3px solid #000000",
+                  borderRadius: "5rem",
+                  width: "20rem",
+                  height: "20rem",
+                }}
+              />
+              <a
+                href="https://github.com/JuanCDLPR"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton
+                  style={{
+                    marginTop: "40px",
+                  }}
+                >
+                  <FaGithub
+                    style={{
+                      fontSize: "40px",
+                      color: "#000000",
+                    }}
+                  />
+                </IconButton>
+              </a>
+            </div>
           </Col>
 
           <Col xs={12} md={6} className="">
@@ -71,27 +93,46 @@ export default function Inicio() {
             md={6}
             className=" d-flex justify-content-center pt-md-5"
           >
-            <div
-              style={{
-                background: `url(${Me})`,
-                backgroundPositionX: "85%",
-                backgroundPositionY: "10%",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "150%",
-                border: "3px solid #000000",
-                borderRadius: "5rem",
-                width: "23rem",
-                height: "23rem",
-              }}
-              className="d-none d-md-block "
-            />
+            <div className="d-none d-md-flex flex-column align-items-center ">
+              <div
+                style={{
+                  background: `url(${Me})`,
+                  backgroundPositionX: "85%",
+                  backgroundPositionY: "10%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "150%",
+                  border: "3px solid #000000",
+                  borderRadius: "5rem",
+                  width: "23rem",
+                  height: "23rem",
+                }}
+              />
+              <a
+                href="https://github.com/JuanCDLPR"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconButton
+                  style={{
+                    marginTop: "5px",
+                  }}
+                >
+                  <FaGithub
+                    style={{
+                      fontSize: "40px",
+                      color: "#000000",
+                    }}
+                  />
+                </IconButton>
+              </a>
+            </div>
           </Col>
         </Row>
 
         <Row className="">
           <Col
             xs={12}
-            className=" d-flex py-4 ps-0 ps-md-5 justify-content-center justify-content-md-start"
+            className=" d-flex mt-5 mt-md-0  ps-0 ps-md-5 justify-content-center justify-content-md-start"
           >
             <button class="button" type="button" onClick={downloadCV}>
               <span class="button__text">Descargar CV</span>
