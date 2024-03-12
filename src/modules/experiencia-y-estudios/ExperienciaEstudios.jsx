@@ -70,42 +70,82 @@ export default function ExperienciaEstudios() {
 
         <Row className="p-0 m-0">
           <Col xs={12} md={6}>
-            <div className=" d-flex justify-content-center mb-5 cardSty">
-              <Typography className=" font-Oxygen fs-4 mb-5 p-4">
-                <FaRegCalendar className="me-2" />
-                {"  "}
-                2021 - 2023
-                <br />
-                <MdEngineering className="me-2" />
-                {"  "}Licenciatura en Ingeniería en Gestión y Desarrollo de
-                Software
-                <br />
-                <FaUniversity className="me-2" />
-                {"  "}Universidad Tecnológica de Jalisco
-                <br />
-                <FaLocationPin className="me-2" />
-                {"  "}Guadalajara, JAL
-              </Typography>
+            <div className=" cardSty fs-4 font-Oxygen p-4 mb-5">
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaRegCalendar className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">2021 - 2023</div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <MdEngineering className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">
+                  Licenciatura en Ingeniería en Gestión y Desarrollo de Software
+                </div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaUniversity className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">
+                  Universidad Tecnológica de Jalisco
+                </div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaLocationPin className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">Guadalajara, JAL</div>
+                <div />
+              </div>
             </div>
           </Col>
           <Col xs={12} md={6}>
-            <div className=" d-flex justify-content-center mb-5 cardSty">
-              <Typography className=" font-Oxygen fs-4 mb-5 p-4">
-                <FaRegCalendar className="me-2" />
-                {"  "}
-                2019 - 2021
-                <br />
-                <MdEngineering className="me-2" />
-                {"  "}Técnico en Tecnologías de la Información y Desarrollo de
-                Software Multiplataforma
-                <br />
-                <FaUniversity className="me-2" />
-                {"  "}
-                Universidad Tecnológica de Jalisco
-                <br />
-                <FaLocationPin className="me-2" />
-                {"  "} Guadalajara, JAL
-              </Typography>
+            <div className=" cardSty fs-4 font-Oxygen p-4 mb-5">
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaRegCalendar className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3"> 2019 - 2021</div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <MdEngineering className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">
+                  Técnico en Tecnologías de la Información y Desarrollo de
+                  Software Multiplataforma
+                </div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaUniversity className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">
+                  Universidad Tecnológica de Jalisco
+                </div>
+                <div />
+              </div>
+
+              <div className=" d-flex  fs-4 font-Oxygen flex-row align-items-start mt-1">
+                <div className=" flex-grow-0">
+                  <FaLocationPin className="me-2" />
+                </div>
+                <div className=" flex-grow-1 ps-3">Guadalajara, JAL</div>
+                <div />
+              </div>
             </div>
           </Col>
         </Row>
