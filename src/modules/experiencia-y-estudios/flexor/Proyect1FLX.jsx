@@ -18,7 +18,7 @@ export default function Proyect1FLX() {
         className="  shadow-lg w-100 p-3"
       >
         <Typography className="font-Oxygen fs-4 text-center">
-          Kalendar
+          Kalendar FronEnd
         </Typography>
         <Typography className=" text-secondary font-Oxygen text-center">
           Sistema de reservas para una barbería en un ERP{" "}

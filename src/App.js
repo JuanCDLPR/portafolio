@@ -17,6 +17,7 @@ import Error404 from "./includes/Error404";
 import Inicio from "./modules/inicio/Inicio";
 import SobreMi from "./modules/sobre_mi/SobreMi";
 import ExperienciaEstudios from "./modules/experiencia-y-estudios/ExperienciaEstudios";
+import Contacto from "./modules/contacto/Contacto";
 
 function App() {
   const location = useLocation();
@@ -66,7 +67,7 @@ function App() {
                   textDecoration: "none",
                   color:
                     location.pathname == "/" || location.pathname == "/home"
-                      ? "#C9A396"
+                      ? "#5425B3"
                       : "black",
                 }}
                 onClick={onClose}
@@ -79,7 +80,7 @@ function App() {
                 to="sobre-mi"
                 style={{
                   textDecoration: "none",
-                  color: location.pathname == "/nosotros" ? "#C9A396" : "black",
+                  color: location.pathname == "/sobre-mi" ? "#5425B3" : "black",
                 }}
                 onClick={onClose}
               >
@@ -91,7 +92,7 @@ function App() {
                 style={{
                   textDecoration: "none",
                   color:
-                    location.pathname == "/productos" ? "#C9A396" : "black",
+                    location.pathname == "/productos" ? "#5425B3" : "black",
                 }}
                 onClick={onClose}
               >
@@ -103,7 +104,10 @@ function App() {
                 to="experiencia-y-estudios"
                 style={{
                   textDecoration: "none",
-                  color: location.pathname == "/bride" ? "#C9A396" : "black",
+                  color:
+                    location.pathname == "/experiencia-y-estudios"
+                      ? "#5425B3"
+                      : "black",
                 }}
                 onClick={onClose}
               >
@@ -115,7 +119,7 @@ function App() {
                 to="contacto"
                 style={{
                   textDecoration: "none",
-                  color: location.pathname == "/contacto" ? "#C9A396" : "black",
+                  color: location.pathname == "/contacto" ? "#5425B3" : "black",
                 }}
                 onClick={onClose}
               >
@@ -148,6 +152,7 @@ function App() {
               path="/experiencia-y-estudios"
               element={<ExperienciaEstudios />}
             />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Box>

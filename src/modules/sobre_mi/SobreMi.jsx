@@ -36,22 +36,73 @@ export default function SobreMi() {
                 <Typography className="font-Oxygen fs-2 text-center">
                   Un desarrollador web entusiasta 💻
                 </Typography>
-                <p style={{ fontFamily: "serif" }}>
+                <p>
                   Soy un desarrollador Full Stack con{" "}
                   {calcularAniosExperiencia()} años de experiencia,
-                  especializado en JavaScript, React, Angular, Node.js, C# y
-                  .NET. Lo que me motiva día a día es la libertad que me ofrece
-                  el desarrollo web para resolver problemas; me encanta
-                  enfrentar nuevos retos que me empujan a superar mis límites y
-                  evitar el estancamiento.
+                  especializado en JavaScript, React, Angular, Node
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
+                  js, C# y{" "}
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
+                  NET
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>{" "}
+                  Lo que me motiva día a día es la libertad que me ofrece el
+                  desarrollo web para resolver problemas; me encanta enfrentar
+                  nuevos retos que me empujan a superar mis límites y evitar el
+                  estancamiento
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
                   <br />
                   <br />
                   Mi proyecto más destacado hasta la fecha es un sistema de
                   administración de ventas para una agencia de viajes, una
                   experiencia que afianzó mi amor por construir soluciones
-                  robustas y escalables. En el mundo del código, busco
-                  constantemente la innovación y el aprendizaje, manteniendo la
-                  emoción por descubrir y superar los desafíos que se presentan.
+                  robustas y escalables
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>{" "}
+                  En el mundo del código, busco constantemente la innovación y
+                  el aprendizaje, manteniendo la emoción por descubrir y superar
+                  los desafíos que se presentan
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
                 </p>
               </div>
             </Col>

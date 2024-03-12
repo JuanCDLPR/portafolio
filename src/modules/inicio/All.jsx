@@ -157,7 +157,7 @@ export default function All() {
                   </Col>
                   <Col xs={6} md={3} className="p-3">
                     <div className="d-flex justify-content-center flex-column align-content-center align-items-center">
-                      <img src={GIT} alt="" height={40} width={30} />
+                      <img src={GIT} alt="" height={40} width={40} />
                       <div>GIT </div>
                     </div>
                   </Col>

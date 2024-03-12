@@ -72,9 +72,17 @@ export default function Inicio() {
               <div className="mt-3 text-center text-md-start">
                 Hola, mi nombre es
                 <div style={{ color: "#5425B3" }}>
-                  Juan Carlos De La Paz Ramirez
+                  Juan Carlos De La Paz Ramírez
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
                 </div>
-                soy un apacionado de la programacion
+                Soy un apacionado de la programación
               </div>
             </div>
           </Col>
@@ -82,12 +90,20 @@ export default function Inicio() {
           <Col xs={12} md={6} className=" ps-md-5 pt-md-5">
             <div className=" d-none d-md-block">
               <div className="title_me2 ">FULL STACK DEVELOPER</div>
-              <div className="mt-3 text-center text-md-start ">
+              <div className="mt-3 text-center text-md-start">
                 Hola, mi nombre es
                 <div style={{ color: "#5425B3" }}>
-                  Juan Carlos De La Paz Ramirez
+                  Juan Carlos De La Paz Ramírez
+                  <span
+                    style={{
+                      fontFamily: "serif",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    .
+                  </span>
                 </div>
-                soy un apacionado de la programacion
+                Soy un apacionado de la programación
               </div>
             </div>
           </Col>
