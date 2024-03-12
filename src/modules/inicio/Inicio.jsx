@@ -71,8 +71,10 @@ export default function Inicio() {
               <div className="title_me">FULL STACK DEVELOPER</div>
               <div className="mt-3 text-center text-md-start">
                 Hola, mi nombre es
-                <div style={{ color: "#5425B3" }}>Juan Carlos De La Paz</div>
-                soy un entuciasta de la programacion
+                <div style={{ color: "#5425B3" }}>
+                  Juan Carlos De La Paz Ramirez
+                </div>
+                soy un apacionado de la programacion
               </div>
             </div>
           </Col>
@@ -82,8 +84,10 @@ export default function Inicio() {
               <div className="title_me2 ">FULL STACK DEVELOPER</div>
               <div className="mt-3 text-center text-md-start ">
                 Hola, mi nombre es
-                <div style={{ color: "#5425B3" }}>Juan Carlos De La Paz</div>
-                soy un entuciasta de la programacion
+                <div style={{ color: "#5425B3" }}>
+                  Juan Carlos De La Paz Ramirez
+                </div>
+                soy un apacionado de la programacion
               </div>
             </div>
           </Col>

@@ -3,6 +3,10 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Me from "../../assets/me.png";
 
+import { SiSemanticscholar } from "react-icons/si";
+import { IoLanguageSharp } from "react-icons/io5";
+import { MdVideogameAsset } from "react-icons/md";
+
 export default function SobreMi() {
   function calcularAniosExperiencia() {
     const anioInicio = 2021; // El año en que comenzaste a programar
@@ -54,25 +58,73 @@ export default function SobreMi() {
           </Row>
         </div>
         <Row className="p-0 m-0">
-          <Col xs={12} sm={6}>
-            <div className="d-flex justify-content-center flex-column  align-items-center">
-              <div className=" fs-4 mt-5 pt-3 mb-4">Pasatiempos</div>
-              <ul>
-                <li>Musica 🎵</li>
-                <li>Videojuegos 🎮</li>
-                <li>Gimmnasio 🏋️‍♂️</li>
-                <li>Peliculas 🎥</li>
-                <li>Series 📹</li>
-              </ul>
+          <Col xs={12} sm={4}>
+            <div className="d-flex justify-content-center pt-5">
+              <div class="book">
+                <ul>
+                  <li>Musica 🎵</li>
+                  <li>Videojuegos 🎮</li>
+                  <li>Gimmnasio 🏋️‍♂️</li>
+                  <li>Peliculas 🎥</li>
+                  <li>Series 📹</li>
+                </ul>
+                <div class="cover">
+                  <div className="d-flex flex-column align-items-center">
+                    <MdVideogameAsset
+                      style={{
+                        fontSize: "50px",
+                      }}
+                    />
+
+                    <p className="fs-4">Pasatiempos</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </Col>
-          <Col xs={12} sm={6}>
-            <div className="d-flex justify-content-center flex-column  align-items-center">
-              <div className=" fs-4 mt-5 pt-3 mb-4">Idiomas</div>
-              <ul>
-                <li>Español</li>
-                <li>Ingles (principiante)</li>
-              </ul>
+          <Col xs={12} sm={4}>
+            <div className="d-flex justify-content-center pt-5">
+              <div class="book">
+                <ul>
+                  <li>React</li>
+                  <li>Node JS Basic</li>
+                  <li>Angular JS</li>
+                  <li>Node JS Expert</li>
+                  <li>Mongo BD</li>
+                </ul>
+                <div class="cover">
+                  <div className="d-flex flex-column align-items-center">
+                    <SiSemanticscholar
+                      style={{
+                        fontSize: "50px",
+                      }}
+                    />
+
+                    <p className="fs-4">Cursos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col xs={12} sm={4}>
+            <div className="d-flex justify-content-center pt-5">
+              <div class="book">
+                <ul>
+                  <li>Español</li>
+                  <li>Ingles (principiante)</li>
+                </ul>
+                <div class="cover">
+                  <div className="d-flex flex-column align-items-center">
+                    <IoLanguageSharp
+                      style={{
+                        fontSize: "50px",
+                      }}
+                    />
+
+                    <p className="fs-4">Idiomas</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>

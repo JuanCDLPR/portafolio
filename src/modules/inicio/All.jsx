@@ -170,7 +170,7 @@ export default function All() {
                   <Col xs={6} md={3} className="p-3">
                     <div className="d-flex justify-content-center flex-column align-content-center align-items-center">
                       <img src={WINDOWS} alt="" height={40} width={40} />
-                      <div>Linux (Ubuntu) </div>
+                      <div>Windows </div>
                     </div>
                   </Col>
                   <Col xs={6} md={3} className="p-3">

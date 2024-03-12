@@ -16,6 +16,7 @@ import loogo from "./assets/j-alphabet-round-icon.svg";
 import Error404 from "./includes/Error404";
 import Inicio from "./modules/inicio/Inicio";
 import SobreMi from "./modules/sobre_mi/SobreMi";
+import ExperienciaEstudios from "./modules/experiencia-y-estudios/ExperienciaEstudios";
 
 function App() {
   const location = useLocation();
@@ -99,7 +100,7 @@ function App() {
 
               <Link
                 className="p-2 me-2 font-Oxygen animated-text"
-                to="bride"
+                to="experiencia-y-estudios"
                 style={{
                   textDecoration: "none",
                   color: location.pathname == "/bride" ? "#C9A396" : "black",
@@ -143,6 +144,10 @@ function App() {
             <Route path="/" element={<Inicio />} />
             <Route path="/home" element={<Inicio />} />
             <Route path="/sobre-mi" element={<SobreMi />} />
+            <Route
+              path="/experiencia-y-estudios"
+              element={<ExperienciaEstudios />}
+            />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Box>

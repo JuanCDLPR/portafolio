@@ -121,8 +121,12 @@
       bottom: 0;
       /* para posicionar el subrayado en la parte inferior del texto */
       left: 0;
-      /* para que el subrayado inicie desde la izquierda */
+      /* para que el subrayado inicie desde la izquierda
+      background-color: linear-gradient(to right, #000000, #630b57);
       background-color: #c9a396;
+      */
+      background-color: #42083a;
+
       /* para definir el color del subrayado */
       transform: scaleX(0);
       /* para que el subrayado esté oculto al inicio */
@@ -188,5 +192,80 @@
         width: 50%;
       }
     }
+
+    .cardSty {
+      width: auto;
+      height: auto;
+      border-radius: 50px;
+      background: #e0e0e0;
+      box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+
+    .book {
+      position: relative;
+      border-radius: 10px;
+      width: 220px;
+      height: 300px;
+      background-color: whitesmoke;
+      -webkit-box-shadow: 1px 1px 12px #000;
+      box-shadow: 1px 1px 12px #000;
+      -webkit-transform: preserve-3d;
+      -ms-transform: preserve-3d;
+      transform: preserve-3d;
+      -webkit-perspective: 2000px;
+      perspective: 2000px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #000;
+    }
+
+    .cover {
+      top: 0;
+      position: absolute;
+      /*background-color: lightgray;
+      background-color: #ffffff;
+      background-image: linear-gradient(315deg, #ffffff 0%, #274060 74%);
+      */
+      background-color: #c3cbdc;
+      background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform-origin: 0;
+      -ms-transform-origin: 0;
+      transform-origin: 0;
+      -webkit-box-shadow: 1px 1px 12px #000;
+      box-shadow: 1px 1px 12px #000;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .book:hover .cover {
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform: rotatey(-80deg);
+      -ms-transform: rotatey(-80deg);
+      transform: rotatey(-80deg);
+    }
+
+    /*-------------------------------------------------------------*/
   </style>
 </html>
