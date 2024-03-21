@@ -42,13 +42,7 @@ export default function VrCRM() {
         </Col>
         <Col xs={12} md={6} className="p-4">
           <div className="d-flex flex-column align-items-center">
-            <a
-              href="https://viajesrivieramexico.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={VrCRMImg} alt="" className=" img-fluid img-rounded" />
-            </a>
+            <img src={VrCRMImg} alt="" className=" img-fluid img-rounded" />
           </div>
         </Col>
       </Row>
