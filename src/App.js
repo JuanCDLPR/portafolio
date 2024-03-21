@@ -18,6 +18,7 @@ import Inicio from "./modules/inicio/Inicio";
 import SobreMi from "./modules/sobre_mi/SobreMi";
 import ExperienciaEstudios from "./modules/experiencia-y-estudios/ExperienciaEstudios";
 import Contacto from "./modules/contacto/Contacto";
+import Proyectos from "./modules/proyectos/Proyectos";
 
 function App() {
   const location = useLocation();
@@ -88,11 +89,11 @@ function App() {
               </Link>
               <Link
                 className="p-2 me-2 font-Oxygen animated-text"
-                to="productos"
+                to="proyectos"
                 style={{
                   textDecoration: "none",
                   color:
-                    location.pathname == "/productos" ? "#5425B3" : "black",
+                    location.pathname == "/proyectos" ? "#5425B3" : "black",
                 }}
                 onClick={onClose}
               >
@@ -153,6 +154,7 @@ function App() {
               element={<ExperienciaEstudios />}
             />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/proyectos" element={<Proyectos />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Box>
