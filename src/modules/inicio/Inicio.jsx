@@ -35,7 +35,7 @@ export default function Inicio() {
               <div
                 style={{
                   background: `url(${Me})`,
-                  backgroundPositionX: "85%",
+                  backgroundPositionX: "50%",
                   backgroundPositionY: "10%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "150%",
@@ -117,7 +117,7 @@ export default function Inicio() {
               <div
                 style={{
                   background: `url(${Me})`,
-                  backgroundPositionX: "85%",
+                  backgroundPositionX: "50%",
                   backgroundPositionY: "10%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "150%",
